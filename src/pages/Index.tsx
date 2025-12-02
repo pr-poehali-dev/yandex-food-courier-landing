@@ -1,11 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Index = () => {
   const [showJoinForm, setShowJoinForm] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const benefits = [
     {
@@ -1658,6 +1672,17 @@ const Index = () => {
           <p className="text-gray-500">© 2024 Яндекс Еда. Все права защищены.</p>
         </div>
       </footer>
+
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 w-16 h-16 bg-primary hover:bg-primary/90 text-black rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 z-50 animate-fade-in"
+          aria-label="Прокрутить наверх"
+          title="Прокрутить наверх"
+        >
+          <Icon name="Bike" size={32} />
+        </button>
+      )}
     </div>
   );
 };

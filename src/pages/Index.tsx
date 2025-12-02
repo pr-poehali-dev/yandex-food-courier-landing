@@ -795,6 +795,79 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            👤 Со скольки лет можно работать курьером Яндекс
+          </h2>
+          <p className="text-center text-muted-foreground text-xl mb-16 max-w-3xl mx-auto">
+            Требования по возрасту и документам
+          </p>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all bg-white">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-4xl font-bold text-black">18+</span>
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold mb-2">Минимальный возраст</h3>
+                  <p className="text-xl text-muted-foreground">
+                    <strong>Яндекс курьер со скольки лет можно работать?</strong> С 18 лет — это минимальный возраст для регистрации.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 border-2 border-blue-200 p-6 rounded-xl mb-8">
+                <p className="text-lg">
+                  Исключений нет, так как требуется заключение договора.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <h4 className="text-2xl font-bold mb-6">Кто может работать:</h4>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4 bg-muted p-6 rounded-xl">
+                    <span className="text-3xl">✅</span>
+                    <div>
+                      <h5 className="text-xl font-bold mb-2">Студенты</h5>
+                      <p className="text-lg">Отличный вариант подработки между парами</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 bg-muted p-6 rounded-xl">
+                    <span className="text-3xl">✅</span>
+                    <div>
+                      <h5 className="text-xl font-bold mb-2">Без опыта</h5>
+                      <p className="text-lg">Обучение происходит прямо в процессе, первые заказы очень простые</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 bg-muted p-6 rounded-xl">
+                    <span className="text-3xl">✅</span>
+                    <div>
+                      <h5 className="text-xl font-bold mb-2">С любым образованием</h5>
+                      <p className="text-lg">Диплом не требуется</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 bg-muted p-6 rounded-xl">
+                    <span className="text-3xl">✅</span>
+                    <div>
+                      <h5 className="text-xl font-bold mb-2">Граждане РФ и иностранцы</h5>
+                      <p className="text-lg">С документами на работу</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-xl">
+                <p className="text-xl font-bold text-black">
+                  Скольки лет можно работать курьером яндекс максимально? Ограничений по верхней возрасте нет — главное физическая способность выполнять доставки.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-bold text-center mb-4">

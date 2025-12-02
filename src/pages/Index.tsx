@@ -115,7 +115,7 @@ const Index = () => {
                 <Icon name="PackageCheck" size={28} className="text-black" />
               </div>
               <div>
-                <h2 className="text-xl font-bold text-black">Яндекс Курьер</h2>
+                <div className="text-xl font-bold text-black">Яндекс Курьер</div>
                 <p className="text-xs text-muted-foreground">Работа с гибким графиком</p>
               </div>
             </div>

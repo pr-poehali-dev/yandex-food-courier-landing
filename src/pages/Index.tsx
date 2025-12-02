@@ -101,19 +101,45 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary to-secondary overflow-hidden">
+      <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-md z-50">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-20">
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://cdn.poehali.dev/projects/00db45a0-a07d-426f-88b8-f0b80246e3e7/files/ac8d4f15-1d63-4438-9c72-4e4f6c281e76.jpg" 
+                alt="Яндекс Курьер" 
+                className="w-12 h-12 object-contain"
+              />
+              <div>
+                <h2 className="text-xl font-bold text-black">Яндекс Курьер</h2>
+                <p className="text-xs text-muted-foreground">Работа с гибким графиком</p>
+              </div>
+            </div>
+            
+            <nav className="hidden md:flex items-center gap-8">
+              <a href="#earnings" className="text-base font-semibold hover:text-primary transition-colors">Заработок</a>
+              <a href="#formats" className="text-base font-semibold hover:text-primary transition-colors">Форматы</a>
+              <a href="#conditions" className="text-base font-semibold hover:text-primary transition-colors">Условия</a>
+              <a href="#reviews" className="text-base font-semibold hover:text-primary transition-colors">Отзывы</a>
+              <a href="#faq" className="text-base font-semibold hover:text-primary transition-colors">FAQ</a>
+            </nav>
+
+            <Button 
+              onClick={scrollToJoin}
+              className="bg-primary hover:bg-primary/90 text-black font-bold"
+            >
+              Стать курьером
+            </Button>
+          </div>
+        </div>
+      </header>
+
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary to-secondary overflow-hidden pt-20">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in">
-          <div className="mb-8 flex justify-center">
-            <img 
-              src="https://cdn.poehali.dev/projects/00db45a0-a07d-426f-88b8-f0b80246e3e7/files/ac8d4f15-1d63-4438-9c72-4e4f6c281e76.jpg" 
-              alt="Яндекс Курьер" 
-              className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-2xl animate-fade-in-up"
-            />
-          </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-black drop-shadow-lg">
             🎯 Работа курьером в Яндекс<br/>заработок от 3 000 ₽ в день
           </h1>
@@ -158,7 +184,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section id="earnings" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in-up">
             💰 Сколько зарабатывает курьер Яндекс
@@ -313,7 +339,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-muted">
+      <section id="formats" className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             🚴 Форматы работы курьером
@@ -516,7 +542,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section id="conditions" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             📋 Условия работы курьером Яндекс
@@ -1064,7 +1090,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-muted">
+      <section id="reviews" className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             💬 Реальные отзывы курьеров
@@ -1112,7 +1138,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section id="faq" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             ❓ Часто задаваемые вопросы (FAQ)

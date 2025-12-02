@@ -142,27 +142,155 @@ const Index = () => {
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-5xl font-bold text-center mb-4 animate-fade-in-up">
-            Почему выбирают нас
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in-up">
+            💰 Сколько зарабатывает курьер Яндекс
           </h2>
-          <p className="text-center text-muted-foreground text-xl mb-16">
-            Более 50 000 курьеров уже работают с Яндекс Едой
+          <p className="text-center text-muted-foreground text-xl mb-16 max-w-4xl mx-auto">
+            Доход курьера зависит от нескольких факторов: города работы, количества заказов, времени смены и используемого транспорта. Давайте разберём реальные цифры.
           </p>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
-              <Card 
-                key={index} 
-                className="p-8 hover-scale border-2 hover:border-primary hover:shadow-xl transition-all duration-300 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6">
-                  <Icon name={benefit.icon} size={32} className="text-black" />
+
+          <div className="max-w-6xl mx-auto space-y-12">
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+              <h3 className="text-3xl font-bold mb-4">Сколько получает пеший курьер Яндекс</h3>
+              <p className="text-lg text-muted-foreground mb-6">
+                Пеший курьер Яндекс еда может зарабатывать от 1 500 до 3 000 ₽ за день активной работы. В среднем это 8–12 заказов за смену продолжительностью 6–8 часов.
+              </p>
+              
+              <div className="bg-muted p-6 rounded-xl mb-6">
+                <h4 className="text-xl font-bold mb-4">От чего зависит доход пешего курьера:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <Icon name="MapPin" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Район работы (центр города приносит больше заказов)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Clock" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Время суток (обед и вечер — самые загруженные часы)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Calendar" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">День недели (выходные дают больше заказов)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Zap" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Скорость выполнения доставок</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-xl">
+                <p className="text-xl font-bold text-black">
+                  Месячный доход при работе 5 дней в неделю: 30 000 – 60 000 ₽
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+              <h3 className="text-3xl font-bold mb-4">Сколько зарабатывает курьер Яндекс на авто</h3>
+              <p className="text-lg text-muted-foreground mb-6">
+                Работа яндекс курьер на авто — самый прибыльный формат. Курьер на личном авто Яндекс может зарабатывать от 3 500 до 6 000 ₽ за день, а в крупных городах и того больше.
+              </p>
+
+              <div className="bg-muted p-6 rounded-xl mb-6">
+                <h4 className="text-xl font-bold mb-4">Преимущества работы на авто:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <Icon name="TrendingUp" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Больше заказов за смену (15–25 доставок)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Package" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Возможность брать крупногабаритные заказы</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Cloud" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Работа в любую погоду</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Map" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Увеличенная зона доставки</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 border-2 border-blue-200 p-4 rounded-xl mb-6">
+                <p className="text-lg">
+                  <strong>Важно учитывать:</strong> расходы на бензин составляют 500–800 ₽ за смену, но чистый доход всё равно выше, чем у пеших курьеров.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-r from-secondary to-primary p-6 rounded-xl">
+                <p className="text-xl font-bold text-white">
+                  Месячный доход на авто: 70 000 – 120 000 ₽ при полной занятости
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+              <h3 className="text-3xl font-bold mb-4">Сколько получает курьер Яндекс Еда</h3>
+              <p className="text-lg text-muted-foreground mb-6">
+                Сколько зарабатывают курьеры яндекс еда? Средний доход курьера Яндекс Еды составляет:
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-6">
+                <div className="bg-muted p-6 rounded-xl text-center">
+                  <Icon name="User" size={40} className="text-primary mx-auto mb-3" />
+                  <h4 className="text-xl font-bold mb-2">Пешком</h4>
+                  <p className="text-2xl font-bold text-primary">2 000 – 2 800 ₽/день</p>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{benefit.title}</h3>
-                <p className="text-muted-foreground text-lg">{benefit.description}</p>
-              </Card>
-            ))}
+                <div className="bg-muted p-6 rounded-xl text-center">
+                  <Icon name="Bike" size={40} className="text-primary mx-auto mb-3" />
+                  <h4 className="text-xl font-bold mb-2">На велосипеде</h4>
+                  <p className="text-2xl font-bold text-primary">2 500 – 3 500 ₽/день</p>
+                </div>
+                <div className="bg-gradient-to-br from-primary to-secondary p-6 rounded-xl text-center">
+                  <Icon name="Car" size={40} className="text-black mx-auto mb-3" />
+                  <h4 className="text-xl font-bold mb-2 text-black">На авто</h4>
+                  <p className="text-2xl font-bold text-black">4 000 – 6 000 ₽/день</p>
+                </div>
+              </div>
+
+              <p className="text-lg">
+                Яндекс еда курьер получает оплату за каждый выполненный заказ. Базовая ставка зависит от расстояния и времени доставки. В часы пик действуют повышенные коэффициенты — можно заработать на 30-50% больше.
+              </p>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+              <h3 className="text-3xl font-bold mb-4">Сколько зарабатывают курьеры яндекс доставки</h3>
+              <p className="text-lg text-muted-foreground mb-6">
+                Яндекс доставка курьер работает с более крупными заказами — это могут быть посылки, документы, товары из магазинов. Яндекс курьер зарплата в этом сегменте:
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-muted p-6 rounded-xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon name="User" size={32} className="text-primary" />
+                    <Icon name="Bike" size={32} className="text-primary" />
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Пешком/велосипед</h4>
+                  <p className="text-2xl font-bold text-primary">2 200 – 3 200 ₽/день</p>
+                </div>
+                <div className="bg-gradient-to-br from-secondary to-primary p-6 rounded-xl">
+                  <Icon name="Car" size={32} className="text-white mb-3" />
+                  <h4 className="text-xl font-bold mb-2 text-white">На авто</h4>
+                  <p className="text-2xl font-bold text-white">3 800 – 7 000 ₽/день</p>
+                </div>
+              </div>
+
+              <p className="text-lg">
+                Яндекс доставка работа курьером на авто особенно выгодна — можно брать несколько заказов одновременно и оптимизировать маршруты.
+              </p>
+            </Card>
+
+            <div className="text-center pt-8">
+              <Button 
+                size="lg" 
+                onClick={scrollToJoin}
+                className="text-2xl px-12 py-8 bg-secondary hover:bg-secondary/90 text-white hover-scale shadow-2xl font-bold"
+              >
+                Заработать яндекс курьер прямо сейчас
+              </Button>
+            </div>
           </div>
         </div>
       </section>

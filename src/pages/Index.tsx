@@ -868,6 +868,184 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            🚀 Как устроиться курьером Яндекс — пошаговая инструкция
+          </h2>
+          <p className="text-center text-muted-foreground text-xl mb-16 max-w-4xl mx-auto">
+            Яндекс курьер устроиться можно за 1 день — процесс максимально упрощён и проходит онлайн.
+          </p>
+
+          <div className="max-w-5xl mx-auto space-y-8">
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all bg-gradient-to-br from-white to-primary/5">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-3xl font-bold text-black">1</span>
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold mb-3">Нажмите кнопку регистрации</h3>
+                  <p className="text-lg text-muted-foreground mb-4">
+                    <strong>Яндекс еда курьер устроиться</strong> начинается с заявки. Нажмите кнопку «Стать курьером» на этой странице — попадёте в форму регистрации.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all bg-gradient-to-br from-white to-secondary/5">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-3xl font-bold text-white">2</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-3xl font-bold mb-3">Заполните анкету</h3>
+                  <p className="text-lg text-muted-foreground mb-6">
+                    <strong>Яндекс курьер регистрация</strong> занимает 5 минут:
+                  </p>
+                  <div className="bg-muted p-6 rounded-xl">
+                    <ul className="space-y-3">
+                      <li className="flex items-center gap-3">
+                        <Icon name="CheckCircle2" size={24} className="text-secondary flex-shrink-0" />
+                        <span className="text-lg">ФИО и дата рождения</span>
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <Icon name="Phone" size={24} className="text-secondary flex-shrink-0" />
+                        <span className="text-lg">Номер телефона (для связи)</span>
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <Icon name="MapPin" size={24} className="text-secondary flex-shrink-0" />
+                        <span className="text-lg">Город работы</span>
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <Icon name="Bike" size={24} className="text-secondary flex-shrink-0" />
+                        <span className="text-lg">Выбор транспорта (пешком/велосипед/авто)</span>
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <Icon name="FileText" size={24} className="text-secondary flex-shrink-0" />
+                        <span className="text-lg">Паспортные данные</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <p className="text-lg mt-4 text-muted-foreground">
+                    Все данные проверяются автоматически — никаких собеседований.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all bg-gradient-to-br from-white to-primary/5">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-3xl font-bold text-black">3</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-3xl font-bold mb-3">Пройдите онлайн-регистрацию</h3>
+                  <p className="text-lg text-muted-foreground mb-6">
+                    После подачи заявки придёт СМС с подтверждением. <strong>Курьер яндекс устроиться на работу</strong> можно без визита в офис — всё удалённо.
+                  </p>
+                  <div className="bg-muted p-6 rounded-xl">
+                    <h4 className="text-xl font-bold mb-4">Что нужно подготовить:</h4>
+                    <ul className="space-y-3">
+                      <li className="flex items-center gap-3">
+                        <Icon name="FileText" size={24} className="text-primary flex-shrink-0" />
+                        <span className="text-lg">Паспорт (скан или фото)</span>
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <Icon name="Hash" size={24} className="text-primary flex-shrink-0" />
+                        <span className="text-lg">ИНН</span>
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <Icon name="Car" size={24} className="text-primary flex-shrink-0" />
+                        <span className="text-lg">Для работы на авто: водительское удостоверение и СТС</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all bg-gradient-to-br from-white to-secondary/5">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-3xl font-bold text-white">4</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-3xl font-bold mb-3">Скачайте приложение Яндекс Про</h3>
+                  <p className="text-lg text-muted-foreground mb-6">
+                    После одобрения заявки установите приложение:
+                  </p>
+                  <div className="bg-muted p-6 rounded-xl mb-6">
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <Icon name="Smartphone" size={24} className="text-secondary flex-shrink-0 mt-1" />
+                        <span className="text-lg">Яндекс Про (для курьеров) — в App Store или Google Play</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="LogIn" size={24} className="text-secondary flex-shrink-0 mt-1" />
+                        <span className="text-lg">Войдите с вашим номером телефона</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="BookOpen" size={24} className="text-secondary flex-shrink-0 mt-1" />
+                        <span className="text-lg">Изучите короткое обучение (10 минут)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <p className="text-lg text-muted-foreground">
+                    <strong>Яндекс доставка устроиться курьером</strong> можно через это же приложение — оно общее для всех сервисов (Еда, Доставка, Лавка).
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 border-primary hover:shadow-2xl transition-all bg-gradient-to-br from-primary/10 to-secondary/10">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-3xl font-bold text-black">5</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-3xl font-bold mb-3">Получите первый заказ</h3>
+                  <p className="text-lg mb-6">
+                    Всё готово! Нажимайте «В сеть» в приложении и ждите первый заказ. Обычно он приходит в течение 5–15 минут в активные часы.
+                  </p>
+                  <div className="bg-white p-6 rounded-xl mb-6">
+                    <h4 className="text-xl font-bold mb-4">Советы новичкам:</h4>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <Icon name="Sun" size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <span className="text-lg">Начните в дневное время — заказов меньше, но можно спокойно освоиться</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Snail" size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <span className="text-lg">Первые 2–3 заказа делайте не спеша, изучайте интерфейс</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="MessageCircle" size={24} className="text-primary flex-shrink-0 mt-1" />
+                        <span className="text-lg">Не бойтесь писать в поддержку — они помогают новичкам</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-gradient-to-r from-secondary to-primary p-6 rounded-xl">
+                    <p className="text-xl font-bold text-white text-center">
+                      Время от заявки до первого заказа: 1–3 дня
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <div className="text-center pt-8">
+              <Button 
+                size="lg" 
+                onClick={scrollToJoin}
+                className="text-2xl px-12 py-8 bg-primary hover:bg-primary/90 text-black hover-scale shadow-2xl font-bold"
+              >
+                Яндекс еда стать курьером прямо сейчас
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-bold text-center mb-4">

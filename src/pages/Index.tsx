@@ -1316,6 +1316,83 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Card className="p-10 md:p-16 border-4 border-primary bg-white text-center">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                🎯 Начните зарабатывать уже сегодня — станьте курьером Яндекс
+              </h2>
+              <p className="text-xl mb-8 text-muted-foreground">
+                <strong>Работа курьером яндекс</strong> — это:
+              </p>
+
+              <div className="space-y-4 mb-10 text-left max-w-2xl mx-auto">
+                <div className="flex items-start gap-4 bg-gradient-to-r from-primary/10 to-transparent p-4 rounded-xl">
+                  <span className="text-3xl flex-shrink-0">✅</span>
+                  <div className="text-lg">
+                    <strong>Быстрый старт</strong> — от заявки до первого заказа 1–3 дня
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 bg-gradient-to-r from-secondary/10 to-transparent p-4 rounded-xl">
+                  <span className="text-3xl flex-shrink-0">✅</span>
+                  <div className="text-lg">
+                    <strong>Свобода</strong> — вы решаете, когда и сколько работать
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 bg-gradient-to-r from-primary/10 to-transparent p-4 rounded-xl">
+                  <span className="text-3xl flex-shrink-0">✅</span>
+                  <div className="text-lg">
+                    <strong>Стабильный доход</strong> — от 45 000 до 140 000 ₽ в месяц
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 bg-gradient-to-r from-secondary/10 to-transparent p-4 rounded-xl">
+                  <span className="text-3xl flex-shrink-0">✅</span>
+                  <div className="text-lg">
+                    <strong>Еженедельные выплаты</strong> — деньги каждую неделю на карту
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 bg-gradient-to-r from-primary/10 to-transparent p-4 rounded-xl">
+                  <span className="text-3xl flex-shrink-0">✅</span>
+                  <div className="text-lg">
+                    <strong>Без опыта</strong> — обучение в процессе работы
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-primary to-secondary p-8 rounded-2xl mb-8">
+                <p className="text-2xl font-bold text-black">
+                  Не упустите возможность начать зарабатывать с гибким графиком. Тысячи курьеров уже работают в Яндекс Еде, Доставке и Лавке по всей России.
+                </p>
+              </div>
+
+              <Button 
+                size="lg" 
+                onClick={scrollToJoin}
+                className="text-3xl px-16 py-10 bg-black text-primary hover:bg-black/90 hover-scale shadow-2xl font-bold"
+              >
+                Стать курьером Яндекс прямо сейчас
+              </Button>
+
+              <div className="mt-8 flex flex-wrap justify-center gap-8 text-muted-foreground">
+                <div className="flex items-center gap-2 text-lg">
+                  <Icon name="Shield" size={24} className="text-primary" />
+                  <span>Безопасно</span>
+                </div>
+                <div className="flex items-center gap-2 text-lg">
+                  <Icon name="Zap" size={24} className="text-secondary" />
+                  <span>Быстро</span>
+                </div>
+                <div className="flex items-center gap-2 text-lg">
+                  <Icon name="CheckCircle2" size={24} className="text-primary" />
+                  <span>Просто</span>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="join-section" className="py-20 bg-gradient-to-br from-primary via-primary to-secondary relative overflow-hidden">
         <div className="absolute inset-0 bg-black/5"></div>
         <div className="container mx-auto px-4 relative z-10">

@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Index = () => {
   const [showJoinForm, setShowJoinForm] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const benefits = [
     {
@@ -94,9 +95,14 @@ const Index = () => {
 
   const scrollToJoin = () => {
     setShowJoinForm(true);
+    setMobileMenuOpen(false);
     setTimeout(() => {
       document.getElementById('join-section')?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
+  };
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -122,14 +128,72 @@ const Index = () => {
               <a href="#faq" className="text-base font-semibold hover:text-primary transition-colors">FAQ</a>
             </nav>
 
-            <Button 
-              onClick={scrollToJoin}
-              className="bg-primary hover:bg-primary/90 text-black font-bold"
-            >
-              Стать курьером
-            </Button>
+            <div className="flex items-center gap-4">
+              <Button 
+                onClick={scrollToJoin}
+                className="hidden md:flex bg-primary hover:bg-primary/90 text-black font-bold"
+              >
+                Стать курьером
+              </Button>
+              
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="md:hidden p-2 hover:bg-muted rounded-lg transition-colors"
+                aria-label="Меню"
+              >
+                <Icon name={mobileMenuOpen ? "X" : "Menu"} size={28} className="text-black" />
+              </button>
+            </div>
           </div>
         </div>
+
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-border animate-fade-in">
+            <nav className="container mx-auto px-4 py-6 flex flex-col gap-4">
+              <a 
+                href="#earnings" 
+                onClick={handleNavClick}
+                className="text-lg font-semibold hover:text-primary transition-colors py-2"
+              >
+                Заработок
+              </a>
+              <a 
+                href="#formats" 
+                onClick={handleNavClick}
+                className="text-lg font-semibold hover:text-primary transition-colors py-2"
+              >
+                Форматы
+              </a>
+              <a 
+                href="#conditions" 
+                onClick={handleNavClick}
+                className="text-lg font-semibold hover:text-primary transition-colors py-2"
+              >
+                Условия
+              </a>
+              <a 
+                href="#reviews" 
+                onClick={handleNavClick}
+                className="text-lg font-semibold hover:text-primary transition-colors py-2"
+              >
+                Отзывы
+              </a>
+              <a 
+                href="#faq" 
+                onClick={handleNavClick}
+                className="text-lg font-semibold hover:text-primary transition-colors py-2"
+              >
+                FAQ
+              </a>
+              <Button 
+                onClick={scrollToJoin}
+                className="w-full bg-primary hover:bg-primary/90 text-black font-bold text-lg py-6 mt-2"
+              >
+                Стать курьером
+              </Button>
+            </nav>
+          </div>
+        )}
       </header>
 
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary to-secondary overflow-hidden pt-20">

@@ -105,12 +105,8 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center overflow-hidden">
-                <img 
-                  src="https://cdn.poehali.dev/projects/00db45a0-a07d-426f-88b8-f0b80246e3e7/files/ac8d4f15-1d63-4438-9c72-4e4f6c281e76.jpg" 
-                  alt="Яндекс Курьер" 
-                  className="w-10 h-10 object-contain mix-blend-multiply"
-                />
+              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+                <Icon name="PackageCheck" size={28} className="text-black" />
               </div>
               <div>
                 <h2 className="text-xl font-bold text-black">Яндекс Курьер</h2>

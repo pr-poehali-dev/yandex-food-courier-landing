@@ -1528,6 +1528,20 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-12 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex items-start gap-3 mb-4">
+              <Icon name="Scale" size={24} className="text-muted-foreground flex-shrink-0 mt-1" />
+              <h3 className="text-lg font-bold text-muted-foreground">ДИСКЛЕЙМЕР</h3>
+            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Данный проект не является официальным сайтом ООО «Яндекс» или связанных с ним компаний. Мы являемся независимыми партнёрами по привлечению курьеров. Все права на товарные знаки «Яндекс», «Яндекс.Еда», «Яндекс.Доставка», «Яндекс.Лавка» принадлежат их законным правообладателям. Информация о заработке носит ознакомительный характер и может варьироваться в зависимости от региона, времени работы и других факторов. Мы не гарантируем конкретный уровень дохода.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-black text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <div className="mb-8">

@@ -25,6 +25,18 @@
 
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS COMMENT! -->
 
+    <!-- WWW to non-WWW redirect -->
+    <script>
+        (function() {
+            var host = window.location.hostname;
+            if (host.startsWith('www.')) {
+                window.location.href = window.location.protocol + '//' + 
+                    host.substring(4) + window.location.pathname + 
+                    window.location.search + window.location.hash;
+            }
+        })();
+    </script>
+
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS COMMENT! -->
     <script src="https://cdn.poehali.dev/intertnal/js/pp-min-2.js"></script>
     <script src="https://cdn.poehali.dev/intertnal/js/route-min.js"></script>

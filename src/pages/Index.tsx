@@ -297,38 +297,203 @@ const Index = () => {
 
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <h2 className="text-5xl font-bold text-center mb-4">
-            Требования
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            🚴 Форматы работы курьером
           </h2>
-          <p className="text-center text-muted-foreground text-xl mb-16">
-            Всё что нужно для старта
+          <p className="text-center text-muted-foreground text-xl mb-16 max-w-3xl mx-auto">
+            Выберите формат работы под свои возможности и цели
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {requirements.map((req, index) => (
-              <Card 
-                key={index} 
-                className="p-6 text-center hover-scale bg-white hover:shadow-lg transition-all"
-              >
-                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name={req.icon} size={36} className="text-black" />
+          <div className="max-w-6xl mx-auto space-y-8">
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all bg-white">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Icon name="User" size={36} className="text-black" />
                 </div>
-                <p className="text-lg font-semibold">{req.text}</p>
-              </Card>
-            ))}
-          </div>
+                <div>
+                  <h3 className="text-3xl font-bold">Пеший курьер Яндекс</h3>
+                  <p className="text-lg text-muted-foreground">Самый доступный формат для старта</p>
+                </div>
+              </div>
 
-          <div className="text-center mt-12">
-            <p className="text-xl text-muted-foreground mb-6">
-              Опыт работы курьером не требуется — мы всему научим
-            </p>
-            <Button 
-              size="lg" 
-              onClick={scrollToJoin}
-              className="bg-secondary hover:bg-secondary/90 text-white px-10 py-6 text-xl hover-scale"
-            >
-              Подать заявку
-            </Button>
+              <p className="text-lg mb-6">
+                Не нужны вложения — только смартфон и удобная обувь. Сколько зарабатывает пеший курьер яндекс? От <strong className="text-primary">45 000 ₽</strong> в месяц при работе 5-6 дней в неделю.
+              </p>
+
+              <div className="bg-muted p-6 rounded-xl mb-6">
+                <h4 className="text-xl font-bold mb-4">Кому подходит:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <Icon name="GraduationCap" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Студентам, которым нужна подработка</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Heart" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Тем, кто любит активный образ жизни</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="UserCheck" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Людям без транспорта</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Sparkles" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Новичкам без опыта курьерской работы</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 border-2 border-blue-200 p-4 rounded-xl">
+                <p className="text-lg">
+                  <strong>Зоны доставки:</strong> обычно радиус до 2 км от ресторана
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all bg-white">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Icon name="Bike" size={36} className="text-black" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold">Курьер Яндекс на велосипеде</h3>
+                  <p className="text-lg text-muted-foreground">Золотая середина между пешей доставкой и работой на авто</p>
+                </div>
+              </div>
+
+              <p className="text-lg mb-6">
+                Яндекс курьер на велосипеде берёт больше заказов, чем пеший, но без затрат на топливо.
+              </p>
+
+              <div className="bg-muted p-6 rounded-xl mb-6">
+                <h4 className="text-xl font-bold mb-4">Преимущества:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <Icon name="Zap" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Быстрее доставка = больше заказов</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="CircleDollarSign" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Нет расходов на бензин</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="TreePine" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Можно работать в зелёных зонах и парках</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="TrendingUp" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Доход выше на 30–40% чем у пеших курьеров</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 border-2 border-blue-200 p-4 rounded-xl">
+                <p className="text-lg">
+                  <strong>Требования:</strong> исправный велосипед, термосумка (выдаётся или можно купить свою)
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 border-secondary hover:shadow-2xl transition-all bg-gradient-to-br from-white to-secondary/5">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Icon name="Car" size={36} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold">Курьер Яндекс на личном авто</h3>
+                  <p className="text-lg text-muted-foreground">Самый прибыльный формат</p>
+                </div>
+              </div>
+
+              <p className="text-lg mb-6">
+                Яндекс доставка курьер на личном авто может выполнять до 25 заказов за смену и работать в любую погоду.
+              </p>
+
+              <div className="bg-muted p-6 rounded-xl mb-6">
+                <h4 className="text-xl font-bold mb-4">Что нужно:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <Icon name="Car" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Автомобиль в исправном состоянии</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="CreditCard" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Водительские права</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Smartphone" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Смартфон с приложением Яндекс Про</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-r from-secondary to-primary p-6 rounded-xl mb-6">
+                <p className="text-xl font-bold text-white">
+                  Яндекс доставка работа курьером на авто — это возможность зарабатывать от 80 000 ₽ в месяц. Многие курьеры на авто совмещают несколько сервисов доставки и выходят на доход 150 000+ ₽.
+                </p>
+              </div>
+
+              <div className="bg-muted p-6 rounded-xl">
+                <h4 className="text-xl font-bold mb-4">Дополнительные плюсы:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <Icon name="Music" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Можно слушать музыку/подкасты во время работы</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="CloudSun" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Комфорт в любую погоду</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="ShoppingBag" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Возможность брать крупные заказы из Яндекс Лавки</span>
+                  </li>
+                </ul>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all bg-white">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Icon name="FileText" size={36} className="text-black" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold">Самозанятый курьер Яндекс</h3>
+                  <p className="text-lg text-muted-foreground">Официальная работа с минимальным налогом</p>
+                </div>
+              </div>
+
+              <p className="text-lg mb-6">
+                Работаете как самозанятый курьер яндекс — это значит, что вы ведёте деятельность официально, платите налог 4-6% и получаете все преимущества легальной работы.
+              </p>
+
+              <div className="bg-muted p-6 rounded-xl mb-6">
+                <h4 className="text-xl font-bold mb-4">Преимущества самозанятости:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <Icon name="BadgeCheck" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Официальный доход (подтверждение для кредитов, виз)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Percent" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Низкий налог (4% при работе с юрлицами)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="CheckCircle2" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Никакой отчётности — всё автоматически</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Smartphone" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Работа через приложение «Мой налог»</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-xl">
+                <p className="text-xl font-bold text-black">
+                  Зарегистрироваться как самозанятый можно за 10 минут онлайн. Яндекс работает с самозанятыми официально.
+                </p>
+              </div>
+            </Card>
           </div>
         </div>
       </section>

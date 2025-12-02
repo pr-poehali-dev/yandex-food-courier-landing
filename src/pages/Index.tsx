@@ -93,12 +93,10 @@ const Index = () => {
     }
   ];
 
+  const REFERRAL_LINK = 'https://trk.ppdu.ru/click/cLle6C4S?erid=Kra23uVC3';
+
   const scrollToJoin = () => {
-    setShowJoinForm(true);
-    setMobileMenuOpen(false);
-    setTimeout(() => {
-      document.getElementById('join-section')?.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
+    window.open(REFERRAL_LINK, '_blank', 'noopener,noreferrer');
   };
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -132,6 +130,7 @@ const Index = () => {
               <Button 
                 onClick={scrollToJoin}
                 className="hidden md:flex bg-primary hover:bg-primary/90 text-black font-bold"
+                rel="nofollow noopener noreferrer"
               >
                 Стать курьером
               </Button>
@@ -188,6 +187,7 @@ const Index = () => {
               <Button 
                 onClick={scrollToJoin}
                 className="w-full bg-primary hover:bg-primary/90 text-black font-bold text-lg py-6 mt-2"
+                rel="nofollow noopener noreferrer"
               >
                 Стать курьером
               </Button>
@@ -236,6 +236,7 @@ const Index = () => {
             size="lg" 
             onClick={scrollToJoin}
             className="text-2xl px-12 py-8 bg-black text-primary hover:bg-black/90 hover-scale shadow-2xl font-bold"
+            rel="nofollow noopener noreferrer"
           >
             Стать курьером Яндекс
           </Button>
@@ -393,6 +394,7 @@ const Index = () => {
                 size="lg" 
                 onClick={scrollToJoin}
                 className="text-2xl px-12 py-8 bg-secondary hover:bg-secondary/90 text-white hover-scale shadow-2xl font-bold"
+                rel="nofollow noopener noreferrer"
               >
                 Заработать яндекс курьер прямо сейчас
               </Button>
@@ -892,6 +894,7 @@ const Index = () => {
                   size="lg" 
                   onClick={scrollToJoin}
                   className="text-2xl px-12 py-8 bg-secondary hover:bg-secondary/90 text-white hover-scale shadow-2xl font-bold"
+                  rel="nofollow noopener noreferrer"
                 >
                   Стать курьером Яндекс и скачать приложение
                 </Button>
@@ -1144,6 +1147,7 @@ const Index = () => {
                 size="lg" 
                 onClick={scrollToJoin}
                 className="text-2xl px-12 py-8 bg-primary hover:bg-primary/90 text-black hover-scale shadow-2xl font-bold"
+                rel="nofollow noopener noreferrer"
               >
                 Яндекс еда стать курьером прямо сейчас
               </Button>
@@ -1193,6 +1197,7 @@ const Index = () => {
               size="lg" 
               onClick={scrollToJoin}
               className="text-2xl px-12 py-8 bg-primary hover:bg-primary/90 text-black hover-scale shadow-2xl font-bold"
+              rel="nofollow noopener noreferrer"
             >
               Стать частью команды
             </Button>
@@ -1600,6 +1605,7 @@ const Index = () => {
                 size="lg" 
                 onClick={scrollToJoin}
                 className="text-2xl px-12 py-8 bg-black text-primary hover:bg-black/90 hover-scale shadow-2xl font-bold"
+                rel="nofollow noopener noreferrer"
               >
                 Стать курьером
               </Button>

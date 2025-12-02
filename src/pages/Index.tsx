@@ -1388,6 +1388,54 @@ const Index = () => {
                   <span>Просто</span>
                 </div>
               </div>
+
+              <div className="mt-12 pt-12 border-t-2 border-primary/20">
+                <h3 className="text-3xl font-bold mb-8">📱 Дополнительные преимущества</h3>
+                
+                <div className="grid md:grid-cols-2 gap-8 text-left">
+                  <div className="bg-gradient-to-br from-primary/10 to-transparent p-6 rounded-2xl border-2 border-primary/20">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+                        <Icon name="ShoppingBag" size={28} className="text-black" />
+                      </div>
+                      <h4 className="text-2xl font-bold">Яндекс Лавка — устроиться курьером</h4>
+                    </div>
+                    <p className="text-lg mb-4">
+                      <strong>Яндекс лавка устроиться курьером</strong> можно через ту же регистрацию. Лавка — это экспресс-доставка продуктов за 15 минут. Особенности:
+                    </p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
+                        <span>Короткие расстояния (обычно до 1 км)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="TrendingUp" size={20} className="text-primary flex-shrink-0 mt-1" />
+                        <span>Больше заказов за смену</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Home" size={20} className="text-primary flex-shrink-0 mt-1" />
+                        <span>Работа в пределах района</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Icon name="Users" size={20} className="text-primary flex-shrink-0 mt-1" />
+                        <span>Подходит для пеших курьеров и велосипедистов</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-secondary/10 to-transparent p-6 rounded-2xl border-2 border-secondary/20">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center">
+                        <Icon name="Package" size={28} className="text-white" />
+                      </div>
+                      <h4 className="text-2xl font-bold">Яндекс Доставка — устроиться курьером</h4>
+                    </div>
+                    <p className="text-lg">
+                      <strong>Яндекс доставка устроиться курьером</strong> стоит тем, кто предпочитает работать на авто. Здесь доставляются посылки, документы, товары из магазинов — более разнообразная работа.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </Card>
           </div>
         </div>

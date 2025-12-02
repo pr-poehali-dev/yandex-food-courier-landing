@@ -500,6 +500,303 @@ const Index = () => {
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            📋 Условия работы курьером Яндекс
+          </h2>
+          <p className="text-center text-muted-foreground text-xl mb-16 max-w-4xl mx-auto">
+            Прозрачные и честные условия работы без подводных камней
+          </p>
+
+          <div className="max-w-6xl mx-auto space-y-12">
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Icon name="Clock" size={36} className="text-black" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold">График работы</h3>
+                  <p className="text-lg text-muted-foreground">Работайте когда удобно вам</p>
+                </div>
+              </div>
+
+              <p className="text-lg mb-6">
+                Один из главных плюсов — вы сами решаете, когда работать. <strong>Можно ли работать яндекс курьером по свободному графику?</strong> Да! Открывайте приложение Яндекс Про в любое время и начинайте принимать заказы.
+              </p>
+
+              <div className="bg-muted p-6 rounded-xl mb-6">
+                <h4 className="text-xl font-bold mb-4">Варианты графика:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <Icon name="GraduationCap" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Несколько часов после учёбы/основной работы</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Calendar" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Полный день в выходные</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Moon" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Вечерние смены (обычно самые прибыльные)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Sun" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Ежедневная работа полный день</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-xl">
+                <p className="text-xl font-bold text-black">
+                  Никаких обязательных смен — работайте столько, сколько нужно вам.
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Icon name="Wallet" size={36} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold">Яндекс курьер выплаты</h3>
+                  <p className="text-lg text-muted-foreground">Деньги каждую неделю без задержек</p>
+                </div>
+              </div>
+
+              <p className="text-lg mb-6">
+                Деньги приходят каждую неделю — это один из главных плюсов работы. Яндекс курьер выплаты получает на банковскую карту автоматически.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-muted p-6 rounded-xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon name="CalendarRange" size={28} className="text-secondary" />
+                    <h4 className="text-xl font-bold">Период расчёта</h4>
+                  </div>
+                  <p className="text-lg">С понедельника по воскресенье</p>
+                </div>
+                <div className="bg-muted p-6 rounded-xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon name="Clock" size={28} className="text-secondary" />
+                    <h4 className="text-xl font-bold">Выплата</h4>
+                  </div>
+                  <p className="text-lg">В течение 3 рабочих дней</p>
+                </div>
+                <div className="bg-muted p-6 rounded-xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon name="CreditCard" size={28} className="text-secondary" />
+                    <h4 className="text-xl font-bold">Способ</h4>
+                  </div>
+                  <p className="text-lg">На карту любого российского банка</p>
+                </div>
+                <div className="bg-muted p-6 rounded-xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon name="BadgeCheck" size={28} className="text-secondary" />
+                    <h4 className="text-xl font-bold">Комиссия</h4>
+                  </div>
+                  <p className="text-lg">Отсутствует</p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-secondary to-primary p-6 rounded-xl">
+                <p className="text-xl font-bold text-white">
+                  Сколько платят яндекс курьеру: оплата за каждый заказ + бонусы за выполнение плана.
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Icon name="Award" size={36} className="text-black" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold">Бонусы и мотивация</h3>
+                  <p className="text-lg text-muted-foreground">Зарабатывайте больше с системой поощрений</p>
+                </div>
+              </div>
+
+              <p className="text-lg mb-6">
+                Работа курьером яндекс включает систему бонусов:
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-muted p-6 rounded-xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon name="TrendingUp" size={28} className="text-primary" />
+                    <h4 className="text-xl font-bold">Пиковые часы</h4>
+                  </div>
+                  <p className="text-lg">Повышенная оплата в обед и вечером (коэффициент до 1.5x)</p>
+                </div>
+                <div className="bg-muted p-6 rounded-xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon name="Repeat" size={28} className="text-primary" />
+                    <h4 className="text-xl font-bold">Серии заказов</h4>
+                  </div>
+                  <p className="text-lg">Выполните 5 заказов подряд — получите дополнительный бонус</p>
+                </div>
+                <div className="bg-muted p-6 rounded-xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon name="Calendar" size={28} className="text-primary" />
+                    <h4 className="text-xl font-bold">Выходные дни</h4>
+                  </div>
+                  <p className="text-lg">Увеличенная ставка в субботу и воскресенье</p>
+                </div>
+                <div className="bg-muted p-6 rounded-xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon name="Target" size={28} className="text-primary" />
+                    <h4 className="text-xl font-bold">Квесты</h4>
+                  </div>
+                  <p className="text-lg">Еженедельные челленджи с денежными призами</p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Icon name="Headphones" size={36} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold">Поддержка курьеров</h3>
+                  <p className="text-lg text-muted-foreground">Всегда на связи</p>
+                </div>
+              </div>
+
+              <p className="text-lg mb-6">
+                Яндекс про работа курьером предполагает круглосуточную поддержку:
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-4 bg-muted p-6 rounded-xl">
+                  <Icon name="MessageSquare" size={28} className="text-secondary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">Чат в приложении</h4>
+                    <p className="text-lg">Ответ в течение минуты</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 bg-muted p-6 rounded-xl">
+                  <Icon name="Phone" size={28} className="text-secondary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">Телефон горячей линии</h4>
+                    <p className="text-lg">Круглосуточная связь</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 bg-muted p-6 rounded-xl">
+                  <Icon name="MapPin" size={28} className="text-secondary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">Центры поддержки курьеров</h4>
+                    <p className="text-lg">В крупных городах</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 bg-muted p-6 rounded-xl">
+                  <Icon name="BookOpen" size={28} className="text-secondary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">База знаний</h4>
+                    <p className="text-lg">Ответы на все вопросы</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Icon name="Shield" size={36} className="text-black" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold">Штрафы</h3>
+                  <p className="text-lg text-muted-foreground">Честная система без жёстких санкций</p>
+                </div>
+              </div>
+
+              <div className="bg-green-50 border-2 border-green-200 p-6 rounded-xl">
+                <p className="text-lg">
+                  Система работы построена так, что штрафов практически нет. Яндекс заинтересован в курьерах и не практикует жёсткие санкции. Единственное требование — выполнять взятые заказы. Если поняли, что не успеваете — можно отказаться до взятия заказа в работу без последствий.
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-8 md:p-10 border-2 border-secondary hover:shadow-2xl transition-all bg-gradient-to-br from-white to-secondary/5">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Icon name="Smartphone" size={36} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold">Приложение Яндекс Про курьер</h3>
+                  <p className="text-lg text-muted-foreground">Ваш главный рабочий инструмент</p>
+                </div>
+              </div>
+
+              <p className="text-lg mb-6">
+                Яндекс курьер приложение — ваш главный рабочий инструмент. Через него вы:
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="flex items-center gap-3 bg-muted p-4 rounded-xl">
+                  <Icon name="ShoppingBag" size={24} className="text-secondary flex-shrink-0" />
+                  <span className="text-lg">Получаете заказы</span>
+                </div>
+                <div className="flex items-center gap-3 bg-muted p-4 rounded-xl">
+                  <Icon name="Map" size={24} className="text-secondary flex-shrink-0" />
+                  <span className="text-lg">Видите адреса и маршруты</span>
+                </div>
+                <div className="flex items-center gap-3 bg-muted p-4 rounded-xl">
+                  <Icon name="CheckCircle2" size={24} className="text-secondary flex-shrink-0" />
+                  <span className="text-lg">Отмечаете этапы доставки</span>
+                </div>
+                <div className="flex items-center gap-3 bg-muted p-4 rounded-xl">
+                  <Icon name="Wallet" size={24} className="text-secondary flex-shrink-0" />
+                  <span className="text-lg">Следите за заработком</span>
+                </div>
+                <div className="flex items-center gap-3 bg-muted p-4 rounded-xl">
+                  <Icon name="MessageCircle" size={24} className="text-secondary flex-shrink-0" />
+                  <span className="text-lg">Общаетесь с поддержкой</span>
+                </div>
+              </div>
+
+              <div className="bg-muted p-6 rounded-xl mb-6">
+                <h4 className="text-xl font-bold mb-4">Как работать яндекс курьером через приложение:</h4>
+                <ol className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</span>
+                    <span className="text-lg mt-1">Откройте Яндекс Про</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</span>
+                    <span className="text-lg mt-1">Нажмите «Начать работу»</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</span>
+                    <span className="text-lg mt-1">Ждите новые заказы или смотрите доступные</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</span>
+                    <span className="text-lg mt-1">Принимайте заказ и следуйте навигации</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</span>
+                    <span className="text-lg mt-1">Доставьте заказ и получите оплату</span>
+                  </li>
+                </ol>
+              </div>
+
+              <div className="text-center">
+                <Button 
+                  size="lg" 
+                  onClick={scrollToJoin}
+                  className="text-2xl px-12 py-8 bg-secondary hover:bg-secondary/90 text-white hover-scale shadow-2xl font-bold"
+                >
+                  Стать курьером Яндекс и скачать приложение
+                </Button>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
           <h2 className="text-5xl font-bold text-center mb-4">
             Отзывы курьеров
           </h2>

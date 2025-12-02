@@ -1669,7 +1669,7 @@ const Index = () => {
             <a href="#" className="hover:text-primary transition-colors">Поддержка</a>
             <a href="#" className="hover:text-primary transition-colors">Контакты</a>
           </div>
-          <p className="text-gray-500">© 2024 Яндекс Еда. Все права защищены.</p>
+          <p className="text-gray-500">© 2025 Яндекс Еда. Все права защищены.</p>
         </div>
       </footer>
 

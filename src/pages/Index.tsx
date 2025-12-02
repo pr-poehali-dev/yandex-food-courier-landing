@@ -38,25 +38,36 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "Михаил",
-      age: 24,
-      rating: 4.9,
-      text: "Работаю курьером уже полгода. Отличный способ совмещать с учёбой — сам выбираю когда работать",
-      avatar: "👨‍🎓"
+      name: "Дмитрий",
+      age: 23,
+      city: "Москва",
+      text: "Работаю курьером Яндекс на авто уже полгода. Стабильно зарабатываю 90–110 тысяч в месяц. Вышел на работу через 2 дня после подачи заявки. График строю сам — обычно работаю с обеда до вечера, когда больше всего заказов. Яндекс курьер на авто отзывы читал перед стартом — не пожалел ни разу. Выплаты всегда вовремя, поддержка отвечает быстро.",
+      avatar: "🚗",
+      transport: "На авто"
     },
     {
       name: "Анна",
-      age: 29,
-      rating: 5.0,
-      text: "Зарабатываю 80-100 тысяч в месяц. График удобный, поддержка всегда на связи. Рекомендую!",
-      avatar: "👩‍💼"
+      age: 21,
+      city: "Санкт-Петербург",
+      text: "Подрабатываю пешим курьером после университета. Яндекс еда курьер отзывы изучала долго, но решилась. За 3–4 часа в день зарабатываю 1500–2000 рублей. На месяц выходит около 35 000 — для студентки отличные деньги. Стань курьером яндекс еда — не пожалеешь, особенно если нужны свободные деньги без привязки к офису.",
+      avatar: "👩‍🎓",
+      transport: "Пешком"
     },
     {
-      name: "Дмитрий",
-      age: 21,
-      rating: 4.8,
-      text: "Начал две недели назад. Уже понял принцип работы, деньги приходят вовремя. Всё честно",
-      avatar: "🚴‍♂️"
+      name: "Игорь",
+      age: 29,
+      city: "Екатеринбург",
+      text: "Перешёл на работу яндекс еда после сокращения. Сначала было страшно — возраст уже не студенческий. Но втянулся быстро. На велике делаю 15–18 заказов за смену, зарабатываю около 70 тысяч. Понравилось, что станьте курьером яндекс можно буквально за день — никаких долгих собеседований и проверок.",
+      avatar: "🚴‍♂️",
+      transport: "На велосипеде"
+    },
+    {
+      name: "Мария",
+      age: 19,
+      city: "Казань",
+      text: "Работаю курьером в Яндекс Лавке на выходных. Яндекс лавка работа курьером отлично подошла — беру смены в субботу и воскресенье, за два дня получаю 5–6 тысяч. Совмещаю с учёбой без проблем. Заработать яндекс курьер можно реально столько, сколько написано — всё честно.",
+      avatar: "👧",
+      transport: "Пешком"
     }
   ];
 
@@ -1048,34 +1059,48 @@ const Index = () => {
 
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <h2 className="text-5xl font-bold text-center mb-4">
-            Отзывы курьеров
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            💬 Реальные отзывы курьеров
           </h2>
-          <p className="text-center text-muted-foreground text-xl mb-16">
-            Реальные истории наших партнёров
+          <p className="text-center text-muted-foreground text-xl mb-16 max-w-3xl mx-auto">
+            Истории реальных людей, которые работают в Яндексе
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <Card 
                 key={index} 
-                className="p-8 hover-scale hover:shadow-xl transition-all border-2"
+                className="p-8 hover:shadow-xl transition-all border-2 bg-white"
               >
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="text-5xl">{testimonial.avatar}</div>
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="text-6xl flex-shrink-0">{testimonial.avatar}</div>
                   <div>
-                    <h4 className="text-xl font-bold">{testimonial.name}, {testimonial.age}</h4>
-                    <div className="flex items-center gap-1 text-primary">
-                      <Icon name="Star" size={20} className="fill-current" />
-                      <span className="font-bold text-black">{testimonial.rating}</span>
+                    <h4 className="text-2xl font-bold mb-1">{testimonial.name}, {testimonial.age} {testimonial.age === 21 ? 'год' : testimonial.age === 23 ? 'года' : 'лет'}</h4>
+                    <div className="flex items-center gap-2 text-muted-foreground mb-2">
+                      <Icon name="MapPin" size={18} />
+                      <span className="text-lg">{testimonial.city}</span>
+                    </div>
+                    <div className="inline-flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full">
+                      <Icon name="Bike" size={16} className="text-primary" />
+                      <span className="text-sm font-semibold text-primary">{testimonial.transport}</span>
                     </div>
                   </div>
                 </div>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  "{testimonial.text}"
+                  «{testimonial.text}»
                 </p>
               </Card>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button 
+              size="lg" 
+              onClick={scrollToJoin}
+              className="text-2xl px-12 py-8 bg-primary hover:bg-primary/90 text-black hover-scale shadow-2xl font-bold"
+            >
+              Стать частью команды
+            </Button>
           </div>
         </div>
       </section>

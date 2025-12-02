@@ -9,33 +9,23 @@ const Index = () => {
   const benefits = [
     {
       icon: "Clock",
-      title: "Гибкий график",
-      description: "Работайте когда удобно вам. Выбирайте смены и зарабатывайте в своём ритме"
+      title: "Свободный график",
+      description: "Работайте когда удобно вам"
     },
     {
       icon: "Wallet",
-      title: "Высокий доход",
-      description: "До 3000₽ за смену + бонусы. Еженедельные выплаты на карту"
+      title: "Еженедельные выплаты",
+      description: "Деньги на карту без задержек"
     },
     {
-      icon: "TrendingUp",
-      title: "Карьерный рост",
-      description: "Становитесь старшим курьером и зарабатывайте ещё больше"
+      icon: "UserCheck",
+      title: "Без опыта",
+      description: "Начните зарабатывать сразу после регистрации"
     },
     {
-      icon: "Award",
-      title: "Бонусы и премии",
-      description: "Дополнительные выплаты за рейтинг, скорость и количество заказов"
-    },
-    {
-      icon: "Smartphone",
-      title: "Простое приложение",
-      description: "Интуитивный интерфейс. Всё что нужно — в одном приложении"
-    },
-    {
-      icon: "Shield",
-      title: "Страховка",
-      description: "Бесплатная страховка от несчастных случаев на работе"
+      icon: "Bike",
+      title: "Любой транспорт",
+      description: "Пешком, на велосипеде или личном авто"
     }
   ];
 
@@ -106,20 +96,34 @@ const Index = () => {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-black drop-shadow-lg">
-            Стань курьером<br/>Яндекс Еды
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-black drop-shadow-lg">
+            🎯 Работа курьером в Яндекс<br/>заработок от 3 000 ₽ в день
           </h1>
-          <p className="text-2xl md:text-3xl mb-8 text-black/90 font-semibold">
-            Работай когда хочешь. Зарабатывай сколько нужно
+          <p className="text-xl md:text-2xl mb-4 text-black/90 font-semibold">
+            Подработка и основная работа курьером в Яндекс Еде, Доставке и Лавке
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <div className="flex items-center gap-2 text-xl text-black font-semibold bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
-              <Icon name="Wallet" size={28} />
-              <span>До 100 000₽/мес</span>
-            </div>
-            <div className="flex items-center gap-2 text-xl text-black font-semibold bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
-              <Icon name="Clock" size={28} />
-              <span>Гибкий график</span>
+          <p className="text-lg md:text-xl mb-8 text-black/80 max-w-3xl mx-auto">
+            Ищете способ быстро заработать с гибким графиком? Яндекс курьер — это возможность получать стабильный доход уже сегодня. Работайте в удобное время, выбирайте формат работы и получайте выплаты каждую неделю.
+          </p>
+          <div className="mb-8 text-left max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4 text-black">Преимущества работы:</h3>
+            <div className="space-y-3 text-lg">
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">✅</span>
+                <span className="text-black/90">Свободный график — работайте когда удобно вам</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">✅</span>
+                <span className="text-black/90">Еженедельные выплаты — деньги на карту без задержек</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">✅</span>
+                <span className="text-black/90">Без опыта — начните зарабатывать сразу после регистрации</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">✅</span>
+                <span className="text-black/90">Любой транспорт — пешком, на велосипеде или личном авто</span>
+              </div>
             </div>
           </div>
           <Button 
@@ -127,11 +131,8 @@ const Index = () => {
             onClick={scrollToJoin}
             className="text-2xl px-12 py-8 bg-black text-primary hover:bg-black/90 hover-scale shadow-2xl font-bold"
           >
-            Присоединиться сейчас
+            Стать курьером Яндекс
           </Button>
-          <p className="mt-6 text-black/80 text-lg">
-            🎁 Бонус 3000₽ за первые 20 доставок
-          </p>
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">

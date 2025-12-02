@@ -104,7 +104,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-md z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
@@ -202,13 +202,13 @@ const Index = () => {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-black drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 text-black drop-shadow-lg break-words">
             🎯 Работа курьером в Яндекс<br/>заработок от 3 000 ₽ в день
           </h1>
-          <p className="text-xl md:text-2xl mb-4 text-black/90 font-semibold">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 text-black/90 font-semibold">
             Подработка и основная работа курьером в Яндекс Еде, Доставке и Лавке
           </p>
-          <p className="text-lg md:text-xl mb-8 text-black/80 max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-8 text-black/80 max-w-3xl mx-auto px-2">
             Ищете способ быстро заработать с гибким графиком? Яндекс курьер — это возможность получать стабильный доход уже сегодня. Работайте в удобное время, выбирайте формат работы и получайте выплаты каждую неделю.
           </p>
           <div className="mb-8 text-left max-w-2xl mx-auto">
@@ -235,7 +235,7 @@ const Index = () => {
           <Button 
             size="lg" 
             onClick={scrollToJoin}
-            className="text-2xl px-12 py-8 bg-black text-primary hover:bg-black/90 hover-scale shadow-2xl font-bold"
+            className="text-lg sm:text-xl md:text-2xl px-6 sm:px-8 md:px-12 py-4 sm:py-6 md:py-8 bg-black text-primary hover:bg-black/90 hover-scale shadow-2xl font-bold"
             rel="nofollow noopener noreferrer"
           >
             Стать курьером Яндекс
@@ -249,56 +249,56 @@ const Index = () => {
 
       <section id="earnings" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in-up">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 animate-fade-in-up break-words px-2">
             💰 Сколько зарабатывает курьер Яндекс
           </h2>
-          <p className="text-center text-muted-foreground text-xl mb-16 max-w-4xl mx-auto">
+          <p className="text-center text-muted-foreground text-base sm:text-lg md:text-xl mb-16 max-w-4xl mx-auto px-4">
             Доход курьера зависит от нескольких факторов: города работы, количества заказов, времени смены и используемого транспорта. Давайте разберём реальные цифры.
           </p>
 
           <div className="max-w-6xl mx-auto space-y-12">
-            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
-              <h3 className="text-3xl font-bold mb-4">Сколько получает пеший курьер Яндекс</h3>
-              <p className="text-lg text-muted-foreground mb-6">
+            <Card className="p-4 sm:p-6 md:p-8 lg:p-10 border-2 hover:shadow-xl transition-all">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 break-words">Сколько получает пеший курьер Яндекс</h3>
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6">
                 Пеший курьер Яндекс еда может зарабатывать от 1 500 до 3 000 ₽ за день активной работы. В среднем это 8–12 заказов за смену продолжительностью 6–8 часов.
               </p>
               
-              <div className="bg-muted p-6 rounded-xl mb-6">
-                <h4 className="text-xl font-bold mb-4">От чего зависит доход пешего курьера:</h4>
+              <div className="bg-muted p-4 sm:p-6 rounded-xl mb-6">
+                <h4 className="text-lg sm:text-xl font-bold mb-4">От чего зависит доход пешего курьера:</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <Icon name="MapPin" size={24} className="text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-lg">Район работы (центр города приносит больше заказов)</span>
+                    <span className="text-sm sm:text-base md:text-lg">Район работы (центр города приносит больше заказов)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="Clock" size={24} className="text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-lg">Время суток (обед и вечер — самые загруженные часы)</span>
+                    <span className="text-sm sm:text-base md:text-lg">Время суток (обед и вечер — самые загруженные часы)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="Calendar" size={24} className="text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-lg">День недели (выходные дают больше заказов)</span>
+                    <span className="text-sm sm:text-base md:text-lg">День недели (выходные дают больше заказов)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="Zap" size={24} className="text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-lg">Скорость выполнения доставок</span>
+                    <span className="text-sm sm:text-base md:text-lg">Скорость выполнения доставок</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-xl">
-                <p className="text-xl font-bold text-black">
+              <div className="bg-gradient-to-r from-primary to-secondary p-4 sm:p-6 rounded-xl">
+                <p className="text-base sm:text-lg md:text-xl font-bold text-black break-words">
                   Месячный доход при работе 5 дней в неделю: 30 000 – 60 000 ₽
                 </p>
               </div>
             </Card>
 
-            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+            <Card className="p-4 sm:p-6 md:p-8 lg:p-10 border-2 hover:shadow-xl transition-all">
               <h3 className="text-3xl font-bold mb-4">Сколько зарабатывает курьер Яндекс на авто</h3>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6">
                 Работа яндекс курьер на авто — самый прибыльный формат. Курьер на личном авто Яндекс может зарабатывать от 3 500 до 6 000 ₽ за день, а в крупных городах и того больше.
               </p>
 
-              <div className="bg-muted p-6 rounded-xl mb-6">
+              <div className="bg-muted p-4 sm:p-6 rounded-xl mb-6">
                 <h4 className="text-xl font-bold mb-4">Преимущества работы на авто:</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -333,9 +333,9 @@ const Index = () => {
               </div>
             </Card>
 
-            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+            <Card className="p-4 sm:p-6 md:p-8 lg:p-10 border-2 hover:shadow-xl transition-all">
               <h3 className="text-3xl font-bold mb-4">Сколько получает курьер Яндекс Еда</h3>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6">
                 Сколько зарабатывают курьеры яндекс еда? Средний доход курьера Яндекс Еды составляет:
               </p>
 
@@ -362,9 +362,9 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+            <Card className="p-4 sm:p-6 md:p-8 lg:p-10 border-2 hover:shadow-xl transition-all">
               <h3 className="text-3xl font-bold mb-4">Сколько зарабатывают курьеры яндекс доставки</h3>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6">
                 Яндекс доставка курьер работает с более крупными заказами — это могут быть посылки, документы, товары из магазинов. Яндекс курьер зарплата в этом сегменте:
               </p>
 
@@ -424,11 +424,11 @@ const Index = () => {
                 </div>
               </div>
 
-              <p className="text-lg mb-6">
+              <p className="text-sm sm:text-base md:text-lg mb-6">
                 Не нужны вложения — только смартфон и удобная обувь. Сколько зарабатывает пеший курьер яндекс? От <strong className="text-primary">45 000 ₽</strong> в месяц при работе 5-6 дней в неделю.
               </p>
 
-              <div className="bg-muted p-6 rounded-xl mb-6">
+              <div className="bg-muted p-4 sm:p-6 rounded-xl mb-6">
                 <h4 className="text-xl font-bold mb-4">Кому подходит:</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -468,16 +468,16 @@ const Index = () => {
                 </div>
               </div>
 
-              <p className="text-lg mb-6">
+              <p className="text-sm sm:text-base md:text-lg mb-6">
                 Яндекс курьер на велосипеде берёт больше заказов, чем пеший, но без затрат на топливо.
               </p>
 
-              <div className="bg-muted p-6 rounded-xl mb-6">
-                <h4 className="text-xl font-bold mb-4">Преимущества:</h4>
+              <div className="bg-muted p-4 sm:p-6 rounded-xl mb-6">
+                <h4 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">Преимущества:</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <Icon name="Zap" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
-                    <span className="text-lg">Быстрее доставка = больше заказов</span>
+                    <span className="text-sm sm:text-base md:text-lg">Быстрее доставка = больше заказов</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="CircleDollarSign" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
@@ -507,17 +507,17 @@ const Index = () => {
                   <Icon name="Car" size={36} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold">Курьер Яндекс на личном авто</h3>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">Курьер Яндекс на личном авто</h3>
                   <p className="text-lg text-muted-foreground">Самый прибыльный формат</p>
                 </div>
               </div>
 
-              <p className="text-lg mb-6">
+              <p className="text-sm sm:text-base md:text-lg mb-6">
                 Яндекс доставка курьер на личном авто может выполнять до 25 заказов за смену и работать в любую погоду.
               </p>
 
-              <div className="bg-muted p-6 rounded-xl mb-6">
-                <h4 className="text-xl font-bold mb-4">Что нужно:</h4>
+              <div className="bg-muted p-4 sm:p-6 rounded-xl mb-6">
+                <h4 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">Что нужно:</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <Icon name="Car" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
@@ -541,7 +541,7 @@ const Index = () => {
               </div>
 
               <div className="bg-muted p-6 rounded-xl">
-                <h4 className="text-xl font-bold mb-4">Дополнительные плюсы:</h4>
+                <h4 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">Дополнительные плюсы:</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <Icon name="Music" size={24} className="text-secondary flex-shrink-0 mt-0.5" />
@@ -565,16 +565,16 @@ const Index = () => {
                   <Icon name="FileText" size={36} className="text-black" />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold">Самозанятый курьер Яндекс</h3>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">Самозанятый курьер Яндекс</h3>
                   <p className="text-lg text-muted-foreground">Официальная работа с минимальным налогом</p>
                 </div>
               </div>
 
-              <p className="text-lg mb-6">
+              <p className="text-sm sm:text-base md:text-lg mb-6">
                 Работаете как самозанятый курьер яндекс — это значит, что вы ведёте деятельность официально, платите налог 4-6% и получаете все преимущества легальной работы.
               </p>
 
-              <div className="bg-muted p-6 rounded-xl mb-6">
+              <div className="bg-muted p-4 sm:p-6 rounded-xl mb-6">
                 <h4 className="text-xl font-bold mb-4">Преимущества самозанятости:</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -596,8 +596,8 @@ const Index = () => {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-xl">
-                <p className="text-xl font-bold text-black">
+              <div className="bg-gradient-to-r from-primary to-secondary p-4 sm:p-6 rounded-xl">
+                <p className="text-base sm:text-lg md:text-xl font-bold text-black break-words">
                   Зарегистрироваться как самозанятый можно за 10 минут онлайн. Яндекс работает с самозанятыми официально.
                 </p>
               </div>
@@ -611,12 +611,12 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             📋 Условия работы курьером Яндекс
           </h2>
-          <p className="text-center text-muted-foreground text-xl mb-16 max-w-4xl mx-auto">
+          <p className="text-center text-muted-foreground text-base sm:text-lg md:text-xl mb-16 max-w-4xl mx-auto px-4">
             Прозрачные и честные условия работы без подводных камней
           </p>
 
           <div className="max-w-6xl mx-auto space-y-12">
-            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+            <Card className="p-4 sm:p-6 md:p-8 lg:p-10 border-2 hover:shadow-xl transition-all">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
                   <Icon name="Clock" size={36} className="text-black" />
@@ -627,11 +627,11 @@ const Index = () => {
                 </div>
               </div>
 
-              <p className="text-lg mb-6">
+              <p className="text-sm sm:text-base md:text-lg mb-6">
                 Один из главных плюсов — вы сами решаете, когда работать. <strong>Можно ли работать яндекс курьером по свободному графику?</strong> Да! Открывайте приложение Яндекс Про в любое время и начинайте принимать заказы.
               </p>
 
-              <div className="bg-muted p-6 rounded-xl mb-6">
+              <div className="bg-muted p-4 sm:p-6 rounded-xl mb-6">
                 <h4 className="text-xl font-bold mb-4">Варианты графика:</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -653,14 +653,14 @@ const Index = () => {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-xl">
-                <p className="text-xl font-bold text-black">
+              <div className="bg-gradient-to-r from-primary to-secondary p-4 sm:p-6 rounded-xl">
+                <p className="text-base sm:text-lg md:text-xl font-bold text-black break-words">
                   Никаких обязательных смен — работайте столько, сколько нужно вам.
                 </p>
               </div>
             </Card>
 
-            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+            <Card className="p-4 sm:p-6 md:p-8 lg:p-10 border-2 hover:shadow-xl transition-all">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center flex-shrink-0">
                   <Icon name="Wallet" size={36} className="text-white" />
@@ -671,7 +671,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <p className="text-lg mb-6">
+              <p className="text-sm sm:text-base md:text-lg mb-6">
                 Деньги приходят каждую неделю — это один из главных плюсов работы. Яндекс курьер выплаты получает на банковскую карту автоматически.
               </p>
 
@@ -713,7 +713,7 @@ const Index = () => {
               </div>
             </Card>
 
-            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+            <Card className="p-4 sm:p-6 md:p-8 lg:p-10 border-2 hover:shadow-xl transition-all">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
                   <Icon name="Award" size={36} className="text-black" />
@@ -724,7 +724,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <p className="text-lg mb-6">
+              <p className="text-sm sm:text-base md:text-lg mb-6">
                 Работа курьером яндекс включает систему бонусов:
               </p>
 
@@ -760,7 +760,7 @@ const Index = () => {
               </div>
             </Card>
 
-            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+            <Card className="p-4 sm:p-6 md:p-8 lg:p-10 border-2 hover:shadow-xl transition-all">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center flex-shrink-0">
                   <Icon name="Headphones" size={36} className="text-white" />
@@ -771,7 +771,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <p className="text-lg mb-6">
+              <p className="text-sm sm:text-base md:text-lg mb-6">
                 Яндекс про работа курьером предполагает круглосуточную поддержку:
               </p>
 
@@ -807,7 +807,7 @@ const Index = () => {
               </div>
             </Card>
 
-            <Card className="p-8 md:p-10 border-2 hover:shadow-xl transition-all">
+            <Card className="p-4 sm:p-6 md:p-8 lg:p-10 border-2 hover:shadow-xl transition-all">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
                   <Icon name="Shield" size={36} className="text-black" />
@@ -836,7 +836,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <p className="text-lg mb-6">
+              <p className="text-sm sm:text-base md:text-lg mb-6">
                 Яндекс курьер приложение — ваш главный рабочий инструмент. Через него вы:
               </p>
 
@@ -863,7 +863,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="bg-muted p-6 rounded-xl mb-6">
+              <div className="bg-muted p-4 sm:p-6 rounded-xl mb-6">
                 <h4 className="text-xl font-bold mb-4">Как работать яндекс курьером через приложение:</h4>
                 <ol className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -967,8 +967,8 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-xl">
-                <p className="text-xl font-bold text-black">
+              <div className="bg-gradient-to-r from-primary to-secondary p-4 sm:p-6 rounded-xl">
+                <p className="text-base sm:text-lg md:text-xl font-bold text-black break-words">
                   Скольки лет можно работать курьером яндекс максимально? Ограничений по верхней возрасте нет — главное физическая способность выполнять доставки.
                 </p>
               </div>
@@ -982,7 +982,7 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             🚀 Как устроиться курьером Яндекс — пошаговая инструкция
           </h2>
-          <p className="text-center text-muted-foreground text-xl mb-16 max-w-4xl mx-auto">
+          <p className="text-center text-muted-foreground text-base sm:text-lg md:text-xl mb-16 max-w-4xl mx-auto px-4">
             Яндекс курьер устроиться можно за 1 день — процесс максимально упрощён и проходит онлайн.
           </p>
 
@@ -1008,7 +1008,7 @@ const Index = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-3xl font-bold mb-3">Заполните анкету</h3>
-                  <p className="text-lg text-muted-foreground mb-6">
+                  <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6">
                     <strong>Яндекс курьер регистрация</strong> занимает 5 минут:
                   </p>
                   <div className="bg-muted p-6 rounded-xl">
@@ -1049,7 +1049,7 @@ const Index = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-3xl font-bold mb-3">Пройдите онлайн-регистрацию</h3>
-                  <p className="text-lg text-muted-foreground mb-6">
+                  <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6">
                     После подачи заявки придёт СМС с подтверждением. <strong>Курьер яндекс устроиться на работу</strong> можно без визита в офис — всё удалённо.
                   </p>
                   <div className="bg-muted p-6 rounded-xl">
@@ -1080,10 +1080,10 @@ const Index = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-3xl font-bold mb-3">Скачайте приложение Яндекс Про</h3>
-                  <p className="text-lg text-muted-foreground mb-6">
+                  <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6">
                     После одобрения заявки установите приложение:
                   </p>
-                  <div className="bg-muted p-6 rounded-xl mb-6">
+                  <div className="bg-muted p-4 sm:p-6 rounded-xl mb-6">
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <Icon name="Smartphone" size={24} className="text-secondary flex-shrink-0 mt-1" />
@@ -1113,7 +1113,7 @@ const Index = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-3xl font-bold mb-3">Получите первый заказ</h3>
-                  <p className="text-lg mb-6">
+                  <p className="text-sm sm:text-base md:text-lg mb-6">
                     Всё готово! Нажимайте «В сеть» в приложении и ждите первый заказ. Обычно он приходит в течение 5–15 минут в активные часы.
                   </p>
                   <div className="bg-white p-6 rounded-xl mb-6">

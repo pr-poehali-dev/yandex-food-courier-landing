@@ -107,6 +107,13 @@ const Index = () => {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in">
+          <div className="mb-8 flex justify-center">
+            <img 
+              src="https://cdn.poehali.dev/projects/00db45a0-a07d-426f-88b8-f0b80246e3e7/files/ac8d4f15-1d63-4438-9c72-4e4f6c281e76.jpg" 
+              alt="Яндекс Курьер" 
+              className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-2xl animate-fade-in-up"
+            />
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-black drop-shadow-lg">
             🎯 Работа курьером в Яндекс<br/>заработок от 3 000 ₽ в день
           </h1>

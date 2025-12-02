@@ -1105,46 +1105,213 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-5xl font-bold text-center mb-16">
-            О работе
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            ❓ Часто задаваемые вопросы (FAQ)
           </h2>
+          <p className="text-center text-muted-foreground text-xl mb-16 max-w-3xl mx-auto">
+            Ответы на самые популярные вопросы о работе курьером
+          </p>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {workInfo.map((info, index) => (
-              <Card key={index} className="p-8 bg-white hover-scale">
-                <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-black font-bold">
-                    {index + 1}
+          <div className="max-w-5xl mx-auto space-y-6">
+            <Card className="p-8 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="DollarSign" size={24} className="text-black" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-4">Сколько платят курьерам Яндекс?</h3>
+                  <p className="text-lg mb-4">
+                    <strong>Сколько платят яндекс курьеру</strong> зависит от формата работы:
+                  </p>
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-3 bg-muted p-4 rounded-xl">
+                      <Icon name="User" size={24} className="text-primary flex-shrink-0" />
+                      <div>
+                        <span className="font-bold">Пешком:</span> 50–70 ₽ за заказ (1500–3000 ₽/день)
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 bg-muted p-4 rounded-xl">
+                      <Icon name="Bike" size={24} className="text-primary flex-shrink-0" />
+                      <div>
+                        <span className="font-bold">На велосипеде:</span> 60–90 ₽ за заказ (2000–3500 ₽/день)
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 bg-muted p-4 rounded-xl">
+                      <Icon name="Car" size={24} className="text-primary flex-shrink-0" />
+                      <div>
+                        <span className="font-bold">На авто:</span> 100–150 ₽ за заказ (3500–6000 ₽/день)
+                      </div>
+                    </div>
                   </div>
-                  {info.title}
-                </h3>
-                <ul className="space-y-4">
-                  {info.steps.map((step, stepIndex) => (
-                    <li key={stepIndex} className="flex items-start gap-3 text-lg">
-                      <Icon name="CheckCircle2" size={24} className="text-secondary flex-shrink-0 mt-1" />
-                      <span>{step}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-            ))}
-          </div>
-
-          <div className="mt-16 text-center">
-            <Card className="inline-block p-8 bg-white">
-              <div className="flex flex-col md:flex-row items-center gap-6">
-                <Icon name="Clock" size={48} className="text-primary" />
-                <div className="text-left">
-                  <h4 className="text-2xl font-bold mb-2">Гибкий график работы</h4>
                   <p className="text-lg text-muted-foreground">
-                    Сами решаете, когда и сколько работать. Без обязательных смен.<br/>
-                    Работайте утром, днём, вечером или ночью — как вам удобно.
+                    Плюс бонусы за пиковое время и серии заказов.
                   </p>
                 </div>
               </div>
             </Card>
+
+            <Card className="p-8 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Calendar" size={24} className="text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3">Как часто выплаты?</h3>
+                  <p className="text-lg">
+                    Каждую неделю, автоматически на карту. Деньги за период с понедельника по воскресенье приходят в течение 2–3 рабочих дней.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Briefcase" size={24} className="text-black" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3">Можно ли совмещать с основной работой?</h3>
+                  <p className="text-lg">
+                    Да! Большинство курьеров работают по несколько часов в день после основной работы или в выходные. <strong>Яндекс лавка стать курьером</strong> или в Яндекс Еде можно даже на 2–3 часа в день.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="FileText" size={24} className="text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3">Нужен ли ИП для работы?</h3>
+                  <p className="text-lg">
+                    Нет. Можно работать как самозанятый (налог 4-6%) или по договору ГПХ. Оформление ИП не требуется. <strong>Самозанятый курьер яндекс</strong> — самый популярный формат.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Car" size={24} className="text-black" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3">Могу ли я работать без своего авто?</h3>
+                  <p className="text-lg">
+                    Конечно! <strong>Пеший курьер яндекс еда</strong> или курьер на велосипеде — распространённые форматы. Авто не обязательно.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="CreditCard" size={24} className="text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3">Как выводятся деньги?</h3>
+                  <p className="text-lg">
+                    Автоматически на банковскую карту раз в неделю. Вы указываете карту при регистрации — дальше всё происходит автоматически.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="User" size={24} className="text-black" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3">Есть ли ограничения по возрасту?</h3>
+                  <p className="text-lg">
+                    Минимальный возраст — 18 лет. Максимального ограничения нет.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Package" size={24} className="text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3">Нужно ли покупать термосумку?</h3>
+                  <p className="text-lg">
+                    В большинстве городов термосумку выдают бесплатно или под залог. Можно купить свою — стоит 1000–2000 ₽.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 border-2 border-primary hover:shadow-2xl transition-all bg-gradient-to-br from-white to-primary/5">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="TrendingUp" size={24} className="text-black" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-4">Сколько можно зарабатывать яндекс курьером реально?</h3>
+                  <p className="text-lg mb-4">
+                    <strong>Сколько можно зарабатывать яндекс курьером</strong> при полной занятости:
+                  </p>
+                  <div className="space-y-3 mb-4">
+                    <div className="flex items-center gap-3 bg-white p-4 rounded-xl border-2">
+                      <Icon name="User" size={24} className="text-primary flex-shrink-0" />
+                      <div>
+                        <span className="font-bold">Пешком:</span> 45 000 – 60 000 ₽/месяц
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 bg-white p-4 rounded-xl border-2">
+                      <Icon name="Bike" size={24} className="text-primary flex-shrink-0" />
+                      <div>
+                        <span className="font-bold">На велосипеде:</span> 55 000 – 75 000 ₽/месяц
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 bg-white p-4 rounded-xl border-2 border-secondary">
+                      <Icon name="Car" size={24} className="text-secondary flex-shrink-0" />
+                      <div>
+                        <span className="font-bold">На авто:</span> 80 000 – 140 000 ₽/месяц
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-muted p-4 rounded-xl">
+                    <p className="text-lg">
+                      <strong>При частичной занятости (подработка):</strong> 20 000 – 40 000 ₽/месяц
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 border-2 hover:shadow-xl transition-all">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Repeat" size={24} className="text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3">Можно ли работать в нескольких сервисах одновременно?</h3>
+                  <p className="text-lg">
+                    Да. Многие совмещают Яндекс Еду, Доставку и Лавку через одно приложение Яндекс Про. Также можно параллельно работать в других службах доставки.
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button 
+              size="lg" 
+              onClick={scrollToJoin}
+              className="text-2xl px-12 py-8 bg-secondary hover:bg-secondary/90 text-white hover-scale shadow-2xl font-bold"
+            >
+              Остались вопросы? Регистрируйтесь и узнавайте!
+            </Button>
           </div>
         </div>
       </section>
